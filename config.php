@@ -1,8 +1,10 @@
 <?php
 $server = "localhost";
-$username = "localhost";
-$password = "localhost";
-$database = "localhost";
+$username = "root";
+$password = "";
+$database = "scrum_db";
+
+$conn = mysqli($server, $username, $password, $database);
 
 
 ?>
