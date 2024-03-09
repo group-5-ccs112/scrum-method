@@ -31,7 +31,8 @@
                 }
             ?>
         </select>        
-        <input type="date" name="date_checkin"><
+        <input type="date" name="date_checkin">
+        <input type="submit" name="submit" value="CHECK IN">
     </form>
 </body>
 </html>
