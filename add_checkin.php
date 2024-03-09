@@ -98,7 +98,7 @@
                     <label> Check-in Date</label>
                 </td>
                 <td>
-                    <input type="date" name="date_checkin">
+                    <input type="text" name="date_checkin">
                 </td>
             </tr>
             <tr>
@@ -106,7 +106,7 @@
                     <label> Check-out Date</label>
                 </td>
                 <td>
-                    <input type="date" name="date_checkout">
+                    <input type="text" name="date_checkout">
                 </td>
             </tr>
             <tr>
@@ -119,8 +119,16 @@
     <?php
         include_once("config.php");
 
-        $
+        if (isset($_POST["submit"])) {
+            $guest = $_POST["guest"];
+            $room = $_POST["room"];
+            $date_checkin = $_POST["date_checkin"];
+            $date_checkout = $_POST["date_checkout"];
+            
 
+
+            header("Location: guest_table.php");
+        }
 
     ?>
 </form>
