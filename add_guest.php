@@ -68,6 +68,7 @@ li {
                 <input type="text" id="contact" required>
 
                 <button type="submit">Add</button>
+                
             </form>
         </div>
     </div>

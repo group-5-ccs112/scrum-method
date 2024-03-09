@@ -1,8 +1,8 @@
 $(document).ready(function () {
     
     var students = [
-        { id: 1, name: 'MARK', studentId: 'A1', age: 20 },
-        { id: 2, name: 'ADRIAN', studentId: 'B2', age: 22 }
+        { id: 1, name: 'MARK', studentId: 'A1', age: 20 , contact:'09511640557' },
+        { id: 2, name: 'ADRIAN', studentId: 'B2', age: 22, contact:'09511640557' }
         
     ];
 
@@ -10,7 +10,7 @@ $(document).ready(function () {
     function displayStudents() {
         var studentListHtml = '<ul>';
         students.forEach(function (student) {
-            studentListHtml += `<li>${student.name} (ID: ${student.studentId}, Age: ${student.age}) 
+            studentListHtml += `<li>${student.name} (ID: ${student.studentId}, Age: ${student.age}, Contact: ${student.contact})  
                                 <button class="edit" data-id="${student.id}">Edit</button>
                                 <button class="delete" data-id="${student.id}">Delete</button></li>`;
         });
@@ -167,9 +167,10 @@ $(document).ready(function () {
         var name = $('#name').val();
         var studentId = $('#studentId').val();
         var age = $('#age').val();
+        var contact = $('#contact').val();
 
         
-        var newStudent = { id: students.length + 1, name: name, studentId: studentId, age: age };
+        var newStudent = { id: students.length + 1, name: name, studentId: studentId, age: age, contact: contact };
         students.push(newStudent);
 
         
@@ -199,6 +200,9 @@ $(document).ready(function () {
                                 <label for="editAge">Age:</label>
                                 <input type="text" id="editAge" value="${student.age}" required>
 
+                                <label for="editContact">Contact:</label>
+                                <input type="text" id="editContact" value="${student.contact}" required>
+
                                 <button type="submit">Update</button>
                             </form>`;
 
@@ -214,7 +218,7 @@ $(document).ready(function () {
             student.name = $('#editName').val();
             student.studentId = $('#editStudentId').val();
             student.age = $('#editAge').val();
-
+            student.contact = $('#editContact').val();
             displayStudents();
 
             
