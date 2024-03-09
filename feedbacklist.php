@@ -41,16 +41,11 @@
         .btn:hover {
             background-color: #6082b6;
         }
-        .btn-add {
-            text-align: right;
-        }
     </style>
 </head>
 <body>
     <div class="container my-5">
         <h1>Feedback List</h1>
-        <div class="btn-add">
-            <button a class="btn">ADD</button>
         </div>
         <br>
         <table>
@@ -75,8 +70,7 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <button a class="btn">UPDATE</button>
-                        <button a class="btn">DELETE</button>
+                        <button a class="btn">BACK</button>
                     </td>
                 </tr>
             </tbody>
