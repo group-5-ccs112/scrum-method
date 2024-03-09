@@ -5,10 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Check-in/Check-out</title>
     <style>
+        h1{
+            text-align: center;
+            color: #333333;
+        }
+
+            button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        main {
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            margin:0;
+        }
+        table {
+            border: 1px blue solid;
+            padding: 20px;
+            margin:10px;
+            border-radius:40px;
+        }
     </style>
 </head>
-<body></body>
+<body>
     <form action="add_checkin.php" method="POST" autocomplete="off">
+        <main>
         <table>
             <tr>
                 <td>
@@ -50,16 +95,19 @@
             </tr>
             <tr>
                 <td>
-                <td>
-                    <label>Room Name</label>
-                </td>
+                    <label> Check-in Date</label>
                 </td>
                 <td>
                     <input type="date" name="date_checkin">
                 </td>
             </tr>
-                <input type="submit" name="submit" value="CHECK IN">
-            </table>
-    </form>
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="CHECK IN">
+                </td>
+            </tr>
+        </table>
+        </main>
+</form>
 </body>
 </html>
