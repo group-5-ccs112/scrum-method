@@ -85,7 +85,7 @@ $sql = "SELECT * FROM `tbl_feedback`";
 <body>
         <br>
         <button a class="btn" onclick="guest_table()">BACK</button>
-        <br>
+        <br>  
     </div>
     <script>
         function guest_table(){
