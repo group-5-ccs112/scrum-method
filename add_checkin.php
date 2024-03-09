@@ -12,7 +12,7 @@
                 include_once("config.php");
                 $sql = "SELECT * FROM tbl_checkin";
 
-                $result = $conn->fetch_query($sql);
+                $result = mysqli_query($sql);
 
                 while ($row = $row) {
                     echo "<option value=". $row["guest_id"]. "></option>";
