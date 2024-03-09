@@ -52,8 +52,8 @@
     </style>
 </head>
 <body>
-    <form action="add_checkin.php" method="POST" autocomplete="off">
-        <main>
+<form action="add_checkin.php" method="POST" autocomplete="off">
+    <main>
         <table>
             <tr>
                 <td>
@@ -103,11 +103,26 @@
             </tr>
             <tr>
                 <td>
+                    <label> Check-out Date</label>
+                </td>
+                <td>
+                    <input type="date" name="date_checkout">
+                </td>
+            </tr>
+            <tr>
+                <td>
                     <input type="submit" name="submit" value="CHECK IN">
                 </td>
             </tr>
         </table>
-        </main>
+    </main>
+    <?php
+        include_once("config.php");
+
+        $
+
+
+    ?>
 </form>
 </body>
 </html>
