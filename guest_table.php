@@ -68,7 +68,9 @@
                 window.location.href = 'add_checkin.php';
             }
 
-
+            function feedback(){
+                window.location.href = 'add_guest.php';
+            }
 
             function feedbacklist(){
                 window.location.href = 'feedbacklist.php';
@@ -100,7 +102,7 @@
             echo "<table>";
             echo 
                 "<tr>
-                    <th>Geust Id</th>
+                    <th>Guest Id</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Age</th>
