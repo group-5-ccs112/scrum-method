@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Student Management System</title>
+    <title>Hotel Management System</title>
 </head>
 <body>
 
@@ -43,7 +43,7 @@ li {
 
 </style>
 <div class="container">
-    <h1>ADDING CUSTOMER</h1>
+    <h1>ADDING GUEST</h1>
     <div id="studentList"></div>
     <button id="addStudentBtn">Add Customer</button>
 
@@ -62,6 +62,9 @@ li {
 
                 <label for="age">Age:</label>
                 <input type="text" id="age" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" required>
 
                 <button type="submit">Add</button>
             </form>
