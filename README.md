@@ -26,3 +26,13 @@ I  should be able to view the customer’s feedback in a table form containing g
 
 
 https://github.com/group-5-ccs112/scrum-method.git
+
+
+Login - loresto
+Guest table - marcuap
+Add guest - lindo
+Update guest - palisoc
+Add check-in check-out - llegue 
+Rooms table - napoles
+Feedback - lingan
+Feedback list - natanauan
