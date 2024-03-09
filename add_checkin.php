@@ -7,7 +7,7 @@
     <style>
     </style>
 </head>
-<body></body>
+<body>
     <form action="add_checkin.php" method="POST" autocomplete="off">
         <table>
             <tr>
@@ -50,15 +50,17 @@
             </tr>
             <tr>
                 <td>
-                <td>
-                    <label>Room Name</label>
-                </td>
+                    <label> Check-in Date</label>
                 </td>
                 <td>
                     <input type="date" name="date_checkin">
                 </td>
             </tr>
-                <input type="submit" name="submit" value="CHECK IN">
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="CHECK IN">
+                </td>
+            </tr>
             </table>
     </form>
 </body>
