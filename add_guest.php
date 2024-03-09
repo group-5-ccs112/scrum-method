@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
 <style>
     h1{
     text-align: center;
@@ -45,19 +46,19 @@ li {
 <div class="container">
     <h1>ADDING GUEST</h1>
     <div id="studentList"></div>
-    <button id="addStudentBtn">Add Customer</button>
+    <button id="addStudentBtn">Add Guest</button>
 
     
     <div id="addStudentModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Add Customer</h2>
+            <h2>Add Guest</h2>
             <form id="addStudentForm">
                 
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
                 
-                <label for="studentId">CUSTOMER ID:</label>
+                <label for="studentId">Guest Id:</label>
                 <input type="text" id="studentId" required>
 
                 <label for="age">Age:</label>

@@ -50,16 +50,34 @@
     <div class="container my-5">
         <h1>Hotel Management</h1>
         <div class="btn-add">
-            <button a class="btn">Add Guest</button>
-            <button a class="btn">Update Guest</button>
-            <button a class="btn">Check In</button>
-            <button a class="btn">Check Out</button>
-            <button a class="btn">Room Table</button>
-            <button a class="btn">Feed Back</button>
-            <button a class="btn">Feed Back List</button>
+            <button a class="btn" onclick = "addUpdate()">Add Update Guest</button>
+            <button a class="btn" onclick = "checkin()">Check In</button>
+            <button a class="btn" onclick = "roomtable()">Room Table</button>
+            <button a class="btn" onclick = "feedback()">Feed Back</button>
+            <button a class="btn" onclick = "feedbacklist()">Feed Back List</button>
         </div>
         <br>
     </div>
+
+        <script>
+            function addUpdate(){
+                window.location.href = 'add_guest.php';
+            }
+
+            function checkin(){
+                window.location.href = 'add_checkin.php';
+            }
+
+            function feedback(){
+                window.location.href = 'add_guest.php';
+            }
+
+            function feedbacklist(){
+                window.location.href = 'feedbacklist.php';
+            }
+
+        </script>
+
 
 
     <?php
@@ -78,11 +96,13 @@
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
+
+
         echo "<form>";
             echo "<table>";
             echo 
                 "<tr>
-                    <th>Geust Id</th>
+                    <th>Guest Id</th>
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Age</th>
