@@ -91,5 +91,6 @@ $sql = "SELECT * FROM `tbl_feedback`";
         function guest_table(){
             window.location.href = 'guest_table.php';
         }
+    </script>
 </body>
 </html>
