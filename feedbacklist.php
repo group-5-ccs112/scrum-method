@@ -53,12 +53,6 @@
                 <tr>
                     <th></th>
                     <th></th>
-                    <th></th>
-                    <th></th>
-
-                    <th></th>
-                    <th></th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -69,12 +63,10 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>
-                        <button a class="btn">BACK</button>
-                    </td>
                 </tr>
             </tbody>
         </table>
+        <button a class="btn">BACK</button>
     </div>
 </body>
 </html>
