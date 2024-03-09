@@ -7,35 +7,20 @@
 
       <div class="login-container">
         <h2>Login</h2>
-        <form id="login-form" action="#" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="button" onclick="login()">login</button>
-        </form>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">login</button>
     </div>
 
     <script>
         function login() {
-            var username = document.getElementById('username').value;   
-            var password = document.getElementById('password').value;
-
+            let username = document.getElementById('username');   
+            let password = document.getElementById('password');
+                if (username.value == "admin" && password.value == "admin") {
+                    window.location.href = "guest_table.php";
+                }
         }
         </script>
-        <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
- 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // Basic validation
-    if (empty($username) || empty($password)) {
-        echo "Please enter both username and password.";
-    } else {
-     
-        echo "Login successful!";
-    }
-}
-?>
     <style>
         body {
             font-family: Arial, sans-serif;
