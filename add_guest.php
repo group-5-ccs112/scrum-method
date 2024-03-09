@@ -3,40 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="add_book.css">
-    <title>Add Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Student Management System</title>
 </head>
 <body>
-    <div class="content">
-        <header class="header">
-            <a href="index.php" class="logo">BACK</a>
-        </header>
+
+<style>
+    h1{
+    text-align: center;
+    color: #333333;
+    }
+
+    button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.container{
+    text-align: center;
+}
+
+</style>
+<div class="container">
+    <h1>ADDING CUSTOMER</h1>
+    <div id="studentList"></div>
+    <button id="addStudentBtn">Add Customer</button>
+
+    
+    <div id="addStudentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Customer</h2>
+            <form id="addStudentForm">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="studentId">CUSTOMER ID:</label>
+                <input type="text" id="studentId" required>
+
+                <label for="age">Age:</label>
+                <input type="text" id="age" required>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
     </div>
 
-    <div class="label">
-        <label for="">ADD BOOKS</label>
-    </div>
-
-    <div class="form-container">
+    
+    <div id="editStudentModal" class="modal">
         
-        <form action="add_book.php" method="post">
-            
-
-            <label for="bookTitle">Title:</label>
-            <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter book title" required><br>
-
-            <label for="authorName">Author Name:</label>
-            <input type="text" id="authorName" name="authorName" placeholder="Enter author name" required><br>
-
-            <label for="category">Category:</label>
-            <input type="text" id="category" name="category" placeholder="Enter category" required><br>
-
-            <label for="publishedDate">Published Date:</label>
-            <input type="text" id="publishedDate" name="publishedDate" placeholder="Enter published date" required><br>
-
-            
-            <button type="submit">Add</button>
-        </form>
     </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
