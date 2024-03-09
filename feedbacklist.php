@@ -48,7 +48,7 @@
 </head>
 <body>
     <div class="container my-5">
-        <h1>Hotel Management</h1>
+        <h1>Feedback List</h1>
         <div class="btn-add">
             <button a class="btn">ADD</button>
         </div>
