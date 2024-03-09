@@ -58,7 +58,7 @@ li {
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
                 
-                <label for="studentId">Guest I:</label>
+                <label for="studentId">Guest Id:</label>
                 <input type="text" id="studentId" required>
 
                 <label for="age">Age:</label>
