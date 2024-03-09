@@ -41,27 +41,16 @@
         .btn:hover {
             background-color: #6082b6;
         }
-        .btn-add {
-            text-align: right;
-        }
     </style>
 </head>
 <body>
     <div class="container my-5">
-        <h1>Hotel Management</h1>
-        <div class="btn-add">
-            <button a class="btn">ADD</button>
+        <h1>Feedback List</h1>
         </div>
         <br>
         <table>
             <thead>
                 <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-
-                    <th></th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -74,13 +63,10 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>
-                        <button a class="btn">UPDATE</button>
-                        <button a class="btn">DELETE</button>
-                    </td>
                 </tr>
             </tbody>
         </table>
+        <button a class="btn">BACK</button>
     </div>
 </body>
 </html>
