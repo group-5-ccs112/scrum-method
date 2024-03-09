@@ -52,8 +52,8 @@
     </style>
 </head>
 <body>
-    <form action="add_checkin.php" method="POST" autocomplete="off">
-        <main>
+<form action="add_checkin.php" method="POST" autocomplete="off">
+    <main>
         <table>
             <tr>
                 <td>
@@ -98,7 +98,15 @@
                     <label> Check-in Date</label>
                 </td>
                 <td>
-                    <input type="date" name="date_checkin">
+                    <input type="text" name="date_checkin">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label> Check-out Date</label>
+                </td>
+                <td>
+                    <input type="text" name="date_checkout">
                 </td>
             </tr>
             <tr>
@@ -107,7 +115,22 @@
                 </td>
             </tr>
         </table>
-        </main>
+    </main>
+    <?php
+        include_once("config.php");
+
+        if (isset($_POST["submit"])) {
+            $guest = $_POST["guest"];
+            $room = $_POST["room"];
+            $date_checkin = $_POST["date_checkin"];
+            $date_checkout = $_POST["date_checkout"];
+            
+
+
+            header("Location: guest_table.php");
+        }
+
+    ?>
 </form>
 </body>
 </html>
