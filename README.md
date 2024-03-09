@@ -25,4 +25,4 @@ Upon submission, I should be able to know that my feedback is sent.
 I  should be able to view the customer’s feedback in a table form containing guest_id.
 
 
-https://github.com/group-5-ccs112/scrum-hotel.git
+https://github.com/group-5-ccs112/scrum-method.git
