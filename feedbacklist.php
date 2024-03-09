@@ -42,31 +42,55 @@
             background-color: #6082b6;
         }
     </style>
-</head>
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "scrum_db";
+
+$conn = mysqli_connect($host, $user, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection Failed:" . $conn->connect_error);
+}
+$sql = "SELECT * FROM `tbl_feedback`";
+    $result = $conn->query($sql);
+     if ($result->num_rows > 0) {
+     
+     while ($row = $result->fetch_assoc()) {
+        echo "
+        </head>
 <body>
-    <div class="container my-5">
         <h1>Feedback List</h1>
-        </div>
         <br>
+</body>
         <table>
             <thead>
                 <tr>
-                    <th></th>
-                    <th></th>
+                    <th>Guest ID</th>
+                    <th>Feedbacks</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>" .$row["guest_id"]. "</td>
+                    <td>" .$row["feedback"]. "</td>
                 </tr>
             </tbody>
-        </table>
-        <button a class="btn">BACK</button>
+        </table>";
+     }
+    }
+?>
+</head>
+<body>
+        <br>
+        <button a class="btn" onclick="guest_table()">BACK</button>
+        <br>
     </div>
+    <script>
+        function guest_table(){
+            window.location.href = 'guest_table.php';
+        }
+    </script>
 </body>
 </html>
