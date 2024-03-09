@@ -16,15 +16,22 @@
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<option value=". $row["guest_id"]. ">". $row["first_name"]. " ". $row["last_name"]."</option>";
                 }
+            ?>
+        </select>
+        <select name="room">
+            <?php
+                include_once("config.php");
 
                 $sql = "SELECT * FROM tbl_room";
                 $result = mysqli_query($conn, $sql);
                 while ($row = mysqli_fetch_array($result)) {
-                    echo "<option value=". $row["room_id"]. ">". $row["room_type"]. "</option>";
+                    if ($row["availability"] = "true") {
+                        echo "<option value=". $row["room_id"]. ">". $row["room_type"]. " ". $row["last_name"]."</option>";
+                    }
                 }
-
             ?>
-        </select>
+        </select>        
+        <input type="date" name="date_checkin"><
     </form>
 </body>
 </html>
