@@ -1,0 +1,39 @@
+create database scrum_db;
+use scrum_db;
+
+create table tbl_guest (
+	guest_id int primary key auto_increment,
+    first_name varchar(255) not null,
+    last_name varchar(255) not null,
+    age int(4) not null,
+    contact_no bigint(15) not null
+);
+
+
+create table tbl_room (
+	room_id int primary key auto_increment,
+    room_type varchar(255) not null,
+    price double null,
+    capacity int(3) not null,
+    availability varchar(255) not null
+);
+
+create table tbl_checkin (
+	guest_id int not null,
+    room_id int not null,
+    date_checkin date not null,
+    date_checkout date not null,
+    
+    foreign key(guest_id) references tbl_guest(guest_id),
+    foreign key(room_id) references tbl_room(room_id)
+);
+
+create table tbl_feedback (
+	guest_id int not null,
+	feedback varchar(255) not null 
+);
+
+insert into tbl_guest values (10001, 'John', 'Doe', 30, 09123456789);
+insert into tbl_room values (201, 'Single Room', 5000, 1, true);
+insert into tbl_checkin values (10001, 201, '2024-03-09', '2024-03-10');
+insert into tbl_feedback values (10001, 'nice room');
