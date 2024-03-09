@@ -10,11 +10,11 @@
         <select name="guest">
             <?php
                 include_once("config.php");
-                $sql = "SELECT * FROM tbl_checkin";
+                $sql = "SELECT guest_id FROM tbl_guest";
 
-                $result = mysqli_query($sql);
+                $result = mysqli_query($conn, $sql);
 
-                while ($row = $row) {
+                while ($row = mysqli_fetch_array($result)) {
                     echo "<option value=". $row["guest_id"]. "></option>";
                 }
 
