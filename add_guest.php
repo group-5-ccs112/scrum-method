@@ -68,6 +68,8 @@ li {
                 <input type="text" id="contact" required>
 
                 <button type="submit">Add</button>
+
+                <a href="guest_table.php" class="logo">BACK</a>
                 
             </form>
         </div>
