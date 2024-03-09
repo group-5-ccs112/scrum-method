@@ -51,16 +51,12 @@
         <table>
             <thead>
                 <tr>
-                    <th></th>
-                    <th></th>
+                    <th>Guest Name</th>
+                    <th>Feedbacks</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                 </tr>
