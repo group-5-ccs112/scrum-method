@@ -85,6 +85,7 @@ $sql = "SELECT * FROM `tbl_feedback`";
 <body>
         <br>
         <button a class="btn">BACK</button>
+        <br>
     </div>
 </body>
 </html>
