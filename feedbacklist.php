@@ -84,8 +84,13 @@ $sql = "SELECT * FROM `tbl_feedback`";
 </head>
 <body>
         <br>
-        <button a class="btn" onclick="guest_table">BACK</button>
-        <br>
+        <button a class="btn" onclick="guest_table()">BACK</button>
+        <br>     
     </div>
+    <script>
+        function guest_table(){
+            window.location.href = 'guest_table.php';
+        }
+    </script>
 </body>
 </html>
