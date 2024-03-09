@@ -13,16 +13,14 @@
 
                 $sql = "SELECT * FROM tbl_guest";
                 $result = mysqli_query($conn, $sql);
-
                 while ($row = mysqli_fetch_array($result)) {
                     echo "<option value=". $row["guest_id"]. ">". $row["first_name"]. " ". $row["last_name"]."</option>";
                 }
 
-                $sql = "SELECT * FROM tbl_guest";
+                $sql = "SELECT * FROM tbl_room";
                 $result = mysqli_query($conn, $sql);
-
                 while ($row = mysqli_fetch_array($result)) {
-                    echo "<option value=". $row["guest_id"]. ">". $row["first_name"]. " ". $row["last_name"]."</option>";
+                    echo "<option value=". $row["room_id"]. ">". $row["room_type"]. "</option>";
                 }
 
             ?>
