@@ -42,6 +42,36 @@
             background-color: #6082b6;
         }
     </style>
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "scrum_db";
+
+$conn = mysqli_connect($host, $user, $password, $database);
+
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
+    $guest_id = $_POST['guest_id'];
+    $feedback = $_POST['feedback'];
+
+    
+    $sql = "SELECT TABLE tbl_feedback (guest_id, feedback) VALUES ('guest_id', 'feedback')";
+
+    if (mysqli_query($conn, $sql)) {
+        
+        header('Location: feedback_list.php');
+        exit();
+    } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+}
+?>
 </head>
 <body>
     <div class="container my-5">
@@ -51,7 +81,7 @@
         <table>
             <thead>
                 <tr>
-                    <th>Guest Name</th>
+                    <th>Guest ID</th>
                     <th>Feedbacks</th>
                 </tr>
             </thead>
