@@ -78,6 +78,8 @@
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
+
+        
         echo "<form>";
             echo "<table>";
             echo 
