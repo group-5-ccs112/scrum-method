@@ -54,7 +54,7 @@
             <button a class="btn" onclick = "checkin()">Check In</button>
             <button a class="btn" onclick = "roomtable()">Room Table</button>
             <button a class="btn" onclick = "feedback()">Feed Back</button>
-            <button a class="btn" onclick = "feecbacklist()">Feed Back List</button>
+            <button a class="btn" onclick = "feedbacklist()">Feed Back List</button>
         </div>
         <br>
     </div>
@@ -66,6 +66,12 @@
 
             function checkin(){
                 window.location.href = 'add_checkin.php';
+            }
+
+
+
+            function feedbacklist(){
+                window.location.href = 'feedbacklist.php';
             }
 
         </script>
